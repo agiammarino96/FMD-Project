@@ -1,2 +1,2 @@
 # FMD-Project
-Function Mechanical Design Project
+Functional Mechanical Design Project
