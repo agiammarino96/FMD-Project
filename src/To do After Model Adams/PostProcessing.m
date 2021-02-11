@@ -2,7 +2,7 @@
 clear all
 close all
 clc
-
+addpath('DataForPostprocessing')
 % PAY ATTENTION: the contact forces you import from Adams will have a
 % certain number of samples and will be referred to a certain time interval
 % (corresponding to one or more rotations of the cam). The code should be
