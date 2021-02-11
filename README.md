@@ -9,4 +9,4 @@ The steps for the design are summarizes as follows:
 4. Kinematic and Dynamic simulation on MSC Adams for testing the design.
 5. Post-processing of the results obtained from simulation.
 
-The MatLab scripts of this project have been used for steps 1 and 2 (To do before model Adams) and for step 5 (To do after model Adams).
+The MatLab scripts of this project have been used for steps 1 and 2 (folder: src/To do before model Adams/) and for step 5 (folder: src/To do after model Adams/).
