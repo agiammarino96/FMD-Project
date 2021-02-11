@@ -9,7 +9,7 @@ d(1) = 0.2;
 d(2) = 0.1;
 d(3) = 0.25;
 d(4) = 0.0;
-d(5) = 1-(30/130+sum(d(1:4))); % chosen so that the sum(d(1:5)) is so that alpha_5=100° (d6+d7=30/130)
+d(5) = 1-(30/130+sum(d(1:4))); % chosen so that the sum(d(1:5)) is so that alpha_5=100Â° (d6+d7=30/130)
 h = 180; % Total rise motion law
 N = 100; % Number of samples
 Ab = 130; % Cam angle correspondent to rise
@@ -38,7 +38,7 @@ y7 = y6+y61*d7-B*(2*d7/pi)^2;
 % 1. y7==1 means that at the end of the motion law we want y=180mm
 % 2. y71==0 means that at the end of the motion law we want zero velocity
 % 3. y5==160/180 means that at point 5 of the motion law we want y=160mm
-% 4. d6+d7==30/130 means that at point 5 we want alpha=100°
+% 4. d6+d7==30/130 means that at point 5 we want alpha=100Â°
 
 [A, B, d6, d7] = solve(y7==1,y71==0,y5==160/180,d6+d7==30/130);
 
@@ -149,28 +149,28 @@ end
 
 %% DWELL MOTION LAW FIRST CAM %%%%%%%%%%%%%%%%%%
 
-% Dwell between 130° and 170°
+% Dwell between 130Â° and 170Â°
 t_geom_dwell1 = linspace(0,170-130,N);
 pos_geom_dwell1 = zeros(1,N);
 vel_geom_dwell1 = zeros(1,N);
 acc_geom_dwell1 = zeros(1,N);
 jerk_geom_dwell1 = zeros(1,N);
 
-% Dwell between 300° and 360°
+% Dwell between 300Â° and 360Â°
 t_geom_dwell2 = linspace(0,360-300,N);
 pos_geom_dwell2 = zeros(1,N);
 vel_geom_dwell2 = zeros(1,N);
 acc_geom_dwell2 = zeros(1,N);
 jerk_geom_dwell2 = zeros(1,N);
 
-% Dwell between 130° and 170°
+% Dwell between 130Â° and 170Â°
 t_adim_dwell1 = linspace(0,(170-130)/360,N);
 pos_adim_dwell1 = zeros(1,N);
 vel_adim_dwell1 = zeros(1,N);
 acc_adim_dwell1 = zeros(1,N);
 jerk_adim_dwell1 = zeros(1,N);
 
-% Dwell between 300° and 360°
+% Dwell between 300Â° and 360Â°
 t_adim_dwell2 = linspace(0,(360-300)/360,N);
 pos_adim_dwell2 = zeros(1,N);
 vel_adim_dwell2 = zeros(1,N);
@@ -308,7 +308,7 @@ hold on
 plot(200,-160,'or')
 xlim([0,t_geom_tot(end)])
 title('Geometrical Position')
-xlabel('\alpha [°]')
+xlabel('\alpha [Â°]')
 ylabel('y [mm]')
 
 figure
@@ -316,24 +316,24 @@ plot(t_geom_tot,vel_geom_tot)
 grid on
 xlim([0,t_geom_tot(end)])
 title('Geometrical Velocity')
-xlabel('\alpha [°]')
-ylabel(['y' char(39) '[mm/°]'])
+xlabel('\alpha [Â°]')
+ylabel(['y' char(39) '[mm/Â°]'])
 
 figure
 plot(t_geom_tot,acc_geom_tot)
 grid on
 xlim([0,t_geom_tot(end)])
 title('Geometrical Acceleration')
-xlabel('\alpha [°]')
-ylabel(['y' char(39) char(39) '[mm/°^2]'])
+xlabel('\alpha [Â°]')
+ylabel(['y' char(39) char(39) '[mm/Â°^2]'])
 
 figure
 plot(t_geom_tot,jerk_geom_tot)
 grid on
 xlim([0,t_geom_tot(end)])
 title('Geometrical Jerk')
-xlabel('\alpha [°]')
-ylabel(['y' char(39) char(39) char(39) '[mm/°^3]'])
+xlabel('\alpha [Â°]')
+ylabel(['y' char(39) char(39) char(39) '[mm/Â°^3]'])
 
 figure
 plot(t_adim_tot,pos_adim_tot)
