@@ -1,1 +1,0 @@
-The scripts here are used to study how the motion law varies changing the initial choice of delta1, delta2 and delta3 respectively.
