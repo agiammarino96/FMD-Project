@@ -71,8 +71,8 @@ end
 title('Final Pressure Angle')
 %legend(['link length [mm] = ', num2str(link_var(1))],['link length [mm] = ', num2str(link_var(2))],['link length [mm] = ', num2str(link_var(3))],['link length [mm] = ', num2str(link_var(4))],['link length [mm] = ', num2str(link_var(5))])
 legend('show')
-xlabel('\beta_0 [°]')
-ylabel('\theta [°]')
+xlabel('\beta_0 [Â°]')
+ylabel('\theta [Â°]')
 
 figure
 for k=1:U
@@ -83,8 +83,8 @@ end
 title('Initial Pressure Angle')
 %legend(['link length [mm] = ', num2str(link_var(1))],['link length [mm] = ', num2str(link_var(2))],['link length [mm] = ', num2str(link_var(3))],['link length [mm] = ', num2str(link_var(4))],['link length [mm] = ', num2str(link_var(5))])
 legend('show')
-xlabel('\beta_0 [°]')
-ylabel('\theta [°]')
+xlabel('\beta_0 [Â°]')
+ylabel('\theta [Â°]')
 %% Generation cam
 
 
@@ -215,8 +215,8 @@ abscissa = linspace (0 ,sum( Abscissa ) ,N); % vector with N elements
 figure
 plot(abscissa,(press_ang)*180'/pi,'Displayname','Pressure Angle') %in deg
 title('Pressure Angle')
-xlabel('\alpha [°]')
-ylabel('\theta [°]')
+xlabel('\alpha [Â°]')
+ylabel('\theta [Â°]')
 
 %% undercut check
 k=0;
@@ -242,8 +242,8 @@ save('curvature_radii_secondCam.mat','curvature_radii_secondCam');
 % figure
 % plot(abscissa,beta*180/pi)
 % title('Angle Follower 2')
-% xlabel('\alpha [°]')
-% ylabel('\beta [°]')
+% xlabel('\alpha [Â°]')
+% ylabel('\beta [Â°]')
 % 
 % %% Study of Forces for Spring design
 % % Here we assume X positive leftwards and negative rightwards
