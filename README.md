@@ -1,5 +1,5 @@
 # FMD-Project
-Project of the course Functional Mechanical Design, Politecnico di Milano, academic year 2019/2020. Read FinalReport.pdf for the details of the project and for the solution implemented. This project aims in the design of a multi-stage cam mechanism for an automatic machine. During this project two main tools have been used: MatLab programming and MSC Adams (software for multibody dynamics simulation). 
+Project part of the course Functional Mechanical Design, Politecnico di Milano, academic year 2019/2020. Read FinalReport.pdf for the final report of the project. This project aims in the design of a multi-stage cam mechanism for an automatic machine. During this project two main tools have been used: MatLab programming and MSC Adams (software for multibody dynamics simulation). 
 
 The steps for the design are summarized as follows:
 1. Design of the motion laws involved in the mechanism using MatLab.
